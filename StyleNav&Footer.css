@@ -55,6 +55,20 @@ ul{
     padding: 0 10px;
     font-size: 2rem;
 }
+
+/* ------------------Responsivness---------------*/
+
+@media (max-width: 650px){
+    .resto-name, .nav-links{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 475px){
+    .resto-name, .nav-links{
+        font-size: 0.8rem;
+    }
+}
 /* ------X------NavBar----------X------*/
 
 
@@ -76,5 +90,18 @@ ul{
 }
 .follow-icons{
     font-size: 24px;
+}
+
+/* -------------Resposivness---------------- */
+
+@media (max-width: 500px){
+    .footer{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 420px){
+    .footer{
+        font-size: 0.5rem;
+    }
 }
 /* ------X------Footer----------X------*/
