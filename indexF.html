@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,14 @@
     <link rel="stylesheet" href="./all.css">
 
     <!-- CSS nav-bar et footer-->
-    <link rel="stylesheet" href="./StyleNav&Footer">
+    <link rel="stylesheet" href="./StyleNav&Footer.css">
 
     <!-- My Css-->
     <link rel="stylesheet" href="./styleF.css">
 
 
 </head>
+
 <body>
 
     <!--------------------NAVBAR---------------------->
@@ -25,21 +27,38 @@
             <div class="nav-logo">
                 <img class="img-logo" src="./Image/pagode-removebg-preview.png" alt="Logo en forme de pagode">
             </div>
-            <div class="resto-name"><p>Ô Xi’an Shaanzi</p></div>
-            <div>
-                <ul class="nav-items">
-                    <li class="nav-links">
-                        <a href="#">Acceuil</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="#">Menu</a>
-                    </li>
-                    <li class="nav-links">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+            <div class="resto-name">
+                <p>Ô Xi’an Shaanzi</p>
             </div>
+            <ul class="nav-items">
+                <li class="nav-links">
+                    <a href="#">Acceuil</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#">Menu</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
+    <footer class="footer flex-row">
+        <div class="adresse"><p>19, Avenue du Prado, 13008 Marseille</p></div>
+        <div class="contacts flex-column">
+            <div><p>Nous Contacter</p></div>
+            <div><p>06 13 13 13 13</p></div>
+            <div><p>ÔXi’anShaanzi@restautant.com</p></div>
+        </div>
+        <div class="follow flex-column">
+            <div><p>Suivez-nous</p></div>
+            <div class="follow-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-tripadvisor"></i>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
