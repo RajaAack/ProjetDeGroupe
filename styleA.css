@@ -1,3 +1,175 @@
 *{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image:url("./img/Restau\ front.jpg");
+    background-size: cover;
+}
+
+
+/* ------------Global Classes------------------*/
+a{
+    text-decoration: none;
+    color: var(--text-gray)
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+ul{
+    list-style-type: none;
+}
+/* -----X------Global Classes---------X--------*/
+
+
+
+/* --------------NavBar-----------------*/
+.nav{
+    background-color: #104842;
+    min-height: 5vh;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.resto-name{
+    color: #FCEADE;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+}
+.img-logo{
+    height: 50px;
+    min-height: 25px;
+    width: 50px;
+    min-width: 25px;
+}
+.nav-items{
+    display: flex;
+    margin: 0 5px 0 0;
+    text-align: center;
+    align-self: center;
+}
+.nav-links{
+    color: #FCEADE;
+    padding: 0 10px;
+    font-size: 2rem;
+}
+/* ------------------Responsivness---------------*/
+@media (max-width: 650px){
+    .resto-name, .nav-links{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 475px){
+    .resto-name, .nav-links{
+        font-size: 0.8rem;
+    }
+}
+/* ------X------NavBar----------X------*/
+
+
+/*----Google Map----*/
+.Map{
+
+    width: 92%;
+    text-align: center;
+    background-color:  rgba(38, 38, 38, 0.65);
+    border-radius: 20px;
+    border: chartreuse solid 3px;
+    padding: 8vh 25vh 8vh 8vh;
+    margin-left: 6vh;
+    margin-top: 16vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--x--Google Map--x--*/
+
+
+
+/*--------Text Middle Page--------*/
+.info_middle_page{
+    border: cornflowerblue solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.horaires, .nous_contacter, .emplacement {
+    border: solid rgb(14, 116, 31) 2px;
+    align-items:center;
+}
+
+
+h1{
+    color: #3da5d9;
+    font-size: 3.5vh;
+    padding-top: 3vh;
+}
+
+p, h3{
+    display: flex;
+    color:#fceade;
+    justify-content: center;
+    font-size: 2.5vh;
+    
+} 
+
+
+/*----x----Text Middle Page----x----*/
+
+
+
+
+/* ------------Footer----------------*/
+.footer{
+    background-color: rgba(26, 26 ,26, 0.65);  
+    color:  #FCEADE ;
+    justify-content: space-between;
+    width: 100%;
+    height: 11vh;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.adresse, .contacts, .follow{
+    padding: 0 10px;
+    align-self: center;
+    align-items: center;
+}
+.follow-icons{
+    font-size: 24px;
+}
+
+
+/* -------------Resposivness---------------- */
+@media (max-width: 500px){
+    .footer{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 420px){
+    .footer{
+        font-size: 0.5rem;
+    }
+}
+/* ------X------Footer----------X------*/
