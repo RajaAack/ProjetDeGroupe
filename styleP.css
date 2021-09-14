@@ -59,10 +59,10 @@ body{
     transition: 0.5s ease-in-out;    
     position: relative;   
 }
-.card-box:hover{
+.card_1:hover{
     transform: translate(20px,20px);
 }
-.card-box:before{
+.card_1:before{
     content: "";
     position: absolute;
     top:0;
@@ -72,8 +72,51 @@ body{
     height: 100%;
     z-index: 1;
     transition:0.5s all;
-    opacity: 1;
+    opacity: 0;
+    background: url(./Image/buffet-chinois-colmar.jpg);
+    background-size: cover;
+    border-radius: 20px;
 }
+.card_2:hover{
+    transform: translate(20px,20px);
+}
+.card_2:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    display:block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition:0.5s all;
+    opacity: 0;
+    background: url(./Image/fondue.chinn.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: 50% 50%;
+}
+.card_3:hover{
+    transform: translate(20px,20px);
+}
+.card_3:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    display:block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition:0.5s all;
+    opacity: 0;
+    background: url(./Image/enfant.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 20px;
+}
+.card-box:hover:before{opacity:1;
+box-shadow: 10px 10px 19px #104842;}
 
 /* -------------------background .card-box----------- */
 #photo_1{
@@ -104,6 +147,9 @@ body{
 
 /*--------------- media query---------------- */
 @media(max-width:1140px) {
+    .main{
+        align-items: center;
+    }
     h1{
         font-size:25px;
         padding-bottom: 1vh;
@@ -131,6 +177,7 @@ body{
         display: flex;
         width: 200px;
         height: 300px;
+        align-items: center;
         
 
     }
@@ -178,6 +225,7 @@ ul{
     position: fixed;
     width: 100%;
     z-index: 2;
+    padding:10px 0;
 }
 .nav .nav-menu{
     justify-content: space-between;
@@ -186,7 +234,7 @@ ul{
     color: #FCEADE;
     text-align: center;
     align-self: center;
-    font-size: 2rem;
+    font-size: 4vh;
 }
 .img-logo{
     height: 50px;
@@ -202,7 +250,7 @@ ul{
 }
 .nav-links{
     color: #FCEADE;
-    padding: 0 10px;
+    padding: 0 40px;
     font-size: 2rem;
 }
 
@@ -229,7 +277,7 @@ ul{
     background-color: rgba(26, 26 ,26, 0.65);  
     justify-content: space-around;
     width: 100%;
-    height: 5vh;
+    height: 11vh;
     overflow: hidden;
     color: #FCEADE;
 }
