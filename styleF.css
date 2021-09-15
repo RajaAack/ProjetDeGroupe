@@ -2,12 +2,14 @@
     margin: 0;
 }
 /*Start Carousel Section*/
-.main-sec{
-    display: flex;
-    justify-content: center;
+body{
     background: url(./Image/Fond\ P&F.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.main-sec{
+    display: flex;
+    justify-content: center;
     min-height: 95vh;
 }
 .carousel {
@@ -15,7 +17,7 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    max-width: 70%;
+    max-width: 50%;
     width: 100%;
     height: auto;
     position: relative;
@@ -32,11 +34,21 @@
 .carousel .carousel-item img{
     width: 100%;
     height: auto;
+    max-height: 450px;
 }
 
+.carousel .carousel-item figcaption{
+    background-color: rgba(26, 26, 26, 0.65);
+    min-height: 25px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    color: #FCEADE;
+}
 .carousel .carousel-item-visible{
     display: flex;
     animation: fadeVisibility 0.5s;
+    flex-direction: column;
 }
 
 .carousel .carousel-actions{
@@ -74,3 +86,10 @@
     }
 }
 /*End Carousel Section*/
+
+/*---------Querrys-----------------*/
+@media (max-width:650px){
+    figcaption{
+        font-size: 0.8rem;
+    }
+}
