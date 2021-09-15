@@ -35,7 +35,7 @@
     .main{
         padding:20vh;
         width: 100%;
-        height: auto;
+        height: 95vh;
         display: flex;
         justify-content: space-around;
         
@@ -150,13 +150,21 @@
         .main{
             align-items: center;
         }
+        body{
+            background-size:cover;
+        }
         h1{
+            color: cyan;
             font-size:25px;
             padding-bottom: 1vh;
         }
         h3{
+            color: cyan;
             font-size:19px ;
             padding-bottom: 1vh;
+        }
+        .except{
+            color:cyan;
         }
         h4{
             font-size: 14px;
@@ -173,19 +181,22 @@
             flex-direction: column; 
             align-items: center;
         }
+        body{
+            background-size: cover;
+        }
         .card-box{
             display: flex;
             width: 200px;
             height: 300px;
             align-items: center;
-            
-    
         }
     
           
     
     }
     @media(max-width:400px){
+        .body{width: cover;
+        }
         .card-box{
             font-size: 10px;
             display: flex;
