@@ -1,252 +1,199 @@
 *{padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
-:root{
-    /* couleurs */
---h1:#ff3d3d;
---h3:#FFFFFF;
-}
-  /*-------- classes globales------------ */
-h1{
-    font-size:45px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--h1);
-    padding-bottom: 8vh;
-}
-h3{
-    color:var(--h1);
-    font-size: 25px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color:var(--h1);
-    text-align: center;
-    padding-bottom: 5vh;
-}
-h4{
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color:var(--h3);
-
-}
-.except{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif; color:#ff3d3d;
-}
-/* -------x--------classes globales----x---- */
-.main{
-    padding:20vh;
-    background: url(./Image/Fond\ P&F.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    
-}
-/* x -------------------------------------------x */
-
-/* ---------------dimension .card-box---------------- */
-.card-box{
-    width:400px;
-    height: 600px;
-    border: .5px solid rgba(0, 0, 0,0.3);
-    display: flex;
-    box-shadow: 10px 7px 10px rgba(0, 0, 0,0.6);
-    justify-content: space-between;
-    border-radius: 20px;
-    transition: 0.5s ease-in-out;    
-    position: relative;   
-}
-.card-box:hover{
-    transform: translate(20px,20px);
-}
-.card-box:before{
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    display:block;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition:0.5s all;
-    opacity: 1;
-}
-
-/* -------------------background .card-box----------- */
-#photo_1{
-    background: url(./Image/photo_1_\(traditional\).svg.png);
-    background-size: 100% 100%;
-
-}
-#photo_2{
-    background: url(./Image/photo_2.png);
-    background-size: 100% 100%;
-}
-#photo_3{
-    background: url(./image/photo_3.svg.png);
-    background-size:100% 100%;
-}
-.description{
-    padding: 7vh 2vw;
-    text-align: center;
-    display:flexbox;
-
-}
-.except{
-    display: flex;
-    padding-top: 10vh;
-    justify-content: center;
-}
-/* x -----------------------------x */
-
-/*--------------- media query---------------- */
-@media(max-width:1140px) {
+    margin: 0;
+    box-sizing: border-box;
+    }
+    :root{
+        /* couleurs */
+    --h1:#ff3d3d;
+    --h3:#FCEADE;
+    }
+      /*-------- classes globales------------ */
     h1{
-        font-size:25px;
-        padding-bottom: 1vh;
+        font-size:45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: var(--h1);
+        padding-bottom: 8vh;
     }
     h3{
-        font-size:19px ;
-        padding-bottom: 1vh;
+        color:var(--h1);
+        font-size: 25px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color:var(--h1);
+        text-align: center;
+        padding-bottom: 5vh;
     }
     h4{
-        font-size: 14px;
-    }
-    .card-box{
-        width: 300px;
-        height: 400px;
-    }
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color:var(--h3);
     
-}
-@media(max-width:800px){
+    }
+    .except{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif; color:#ff3d3d;
+    }
+    /* -------x--------classes globales----x---- */
     .main{
+        padding:20vh;
+        width: 100%;
+        height: auto;
         display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-    .card-box{
-        display: flex;
-        width: 200px;
-        height: 300px;
+        justify-content: space-around;
         
-
     }
-
-      
-
-}
-@media(max-width:460px){
+    body{
+        background: url(./Image/Fond\ P&F.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* x -------------------------------------------x */
+    
+    /* ---------------dimension .card-box---------------- */
     .card-box{
-        font-size: 10px;
+        width:400px;
+        height: 600px;
+        border: .5px solid rgba(0, 0, 0,0.3);
         display: flex;
-        width: 150px;
-        align-items: center;
+        box-shadow: 10px 7px 10px rgba(0, 0, 0,0.6);
+        justify-content: space-between;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;    
+        position: relative;   
     }
-}
-/* x---------------------------------x */
-/* ------------navbar de fred------------ */
-a{
-    text-decoration: none;
-    color: var(--text-gray)
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.flex-column{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-ul{
-    list-style-type: none;
-}
-
-/* -----X------Global Classes---------X--------*/
-
-/* --------------NavBar-----------------*/
-.nav{
-    background-color: #104842;
-    min-height: 5vh;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
-.nav .nav-menu{
-    justify-content: space-between;
-}
-.resto-name{
-    color: #FCEADE;
-    text-align: center;
-    align-self: center;
-    font-size: 2rem;
-}
-.img-logo{
-    height: 50px;
-    min-height: 25px;
-    width: 50px;
-    min-width: 25px;
-}
-.nav-items{
-    display: flex;
-    margin: 0 5px 0 0;
-    text-align: center;
-    align-self: center;
-}
-.nav-links{
-    color: #FCEADE;
-    padding: 0 10px;
-    font-size: 2rem;
-}
-
-/* ------------------Responsivness---------------*/
-
-@media (max-width: 650px){
-    .resto-name, .nav-links{
-        font-size: 1.3rem;
+    .card_1:hover{
+        transform: translate(20px,20px);
     }
-}
-
-@media (max-width: 475px){
-    .resto-name, .nav-links{
-        font-size: 0.8rem;
+    .card_1:before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        display:block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition:0.5s all;
+        opacity: 0;
+        background: url(./Image/buffet-chinois-colmar.jpg);
+        background-size: cover;
+        border-radius: 20px;
     }
-}
-/* ------X------NavBar----------X------*/
-
-
-
-/* ------X------Footer----------X------*/
-
-.footer{
-    background-color: rgba(26, 26 ,26, 0.65);  
-    justify-content: space-between;
-    width: 100%;
-    height: 5vh;
-    overflow: hidden;
-}
-
-.adresse, .contacts, .follow{
-    padding: 0 10px;
-    align-self: center;
-    align-items: center;
-}
-.follow-icons{
-    font-size: 24px;
-}
-
-/* -------------Resposivness---------------- */
-
-@media (max-width: 500px){
-    .footer{
-        font-size: 0.8rem;
+    .card_2:hover{
+        transform: translate(20px,20px);
     }
-}
-@media (max-width: 420px){
-    .footer{
-        font-size: 0.5rem;
+    .card_2:before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        display:block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition:0.5s all;
+        opacity: 0;
+        background: url(./Image/fondue.chinn.jpg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: 50% 50%;
     }
-}
+    .card_3:hover{
+        transform: translate(20px,20px);
+    }
+    .card_3:before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        display:block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition:0.5s all;
+        opacity: 0;
+        background: url(./Image/enfant.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 20px;
+    }
+    .card-box:hover:before{opacity:1;
+    box-shadow: 10px 10px 19px #104842;}
+    
+    /* -------------------background .card-box----------- */
+    #photo_1{
+        background: url(./Image/photo_1_\(traditional\).svg.png);
+        background-size: 100% 100%;
+    
+    }
+    #photo_2{
+        background: url(./Image/photo_2.png);
+        background-size: 100% 100%;
+    }
+    #photo_3{
+        background: url(./image/photo_3.svg.png);
+        background-size:100% 100%;
+    }
+    .description{
+        padding: 7vh 2vw;
+        text-align: center;
+        display:flexbox;
+    
+    }
+    .except{
+        display: flex;
+        padding-top: 10vh;
+        justify-content: center;
+    }
+    /* x -----------------------------x */
+    
+    /*---------------responsive  media query---------------- */
+    @media(max-width:1140px) {
+        .main{
+            align-items: center;
+        }
+        h1{
+            font-size:25px;
+            padding-bottom: 1vh;
+        }
+        h3{
+            font-size:19px ;
+            padding-bottom: 1vh;
+        }
+        h4{
+            font-size: 14px;
+        }
+        .card-box{
+            width: 300px;
+            height: 400px;
+        }
+        
+    }
+    @media(max-width:800px){
+        .main{
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+        .card-box{
+            display: flex;
+            width: 200px;
+            height: 300px;
+            align-items: center;
+            
+    
+        }
+    
+          
+    
+    }
+    @media(max-width:400px){
+        .card-box{
+            font-size: 10px;
+            display: flex;
+            width: 150px;
+            align-items: center;
+            height: 320px;
+        }
+    }
+    /* x---------------------------------x */
+    /* ------------navbar et footer de fred------------ */
+   
