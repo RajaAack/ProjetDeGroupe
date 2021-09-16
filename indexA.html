@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesA.css">
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./StyleNav&Footer.css">
+
     <title>Ô Xi'an Shaanzi</title>
 </head>
 
@@ -18,7 +21,7 @@
                 <img class="img-logo" src="./Image/pagode-removebg-preview.png" alt="Logo en forme de pagode">
             </div>
             <div class="resto-name">
-                <p>Ô Xi’an Shaanzi</p>
+                <p id="name_resto">Ô Xi’an Shaanzi</p>
             </div>
             <ul class="nav-items">
                 <li class="nav-links">
@@ -35,36 +38,37 @@
     </nav>
 
     <!------------Google Map-------------->
-    <section>
+    <section style="height: 95vh;">
         <div class="info_restaurant flex-row">
             <div class="Map">
-                <iframe
+                <iframe class="Map_img"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.0963629402827!2d5.3854243145807565!3d43.27035697913627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c74e2691089f%3A0x3ce5c85d92450050!2sAv.%20du%20Prado%2C%20Marseille!5e0!3m2!1sfr!2sfr!4v1631519185800!5m2!1sfr!2sfr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
-     <!-------x------Google Map-------x------->
+                <!-------x------Google Map-------x------->
 
 
 
-    <!---------Text Middle Page----------->
+                <!---------Text Middle Page----------->
                 <div class="info_middle_page flex-column">
                     <div class="emplacement">
                         <h1>EMPLACEMENT</h1>
-                        <P>Avenue du Prado 13008</P>
+                        <P class="white_text">Avenue du Prado</P>
+                        <p class="white_text"> 13008</p>
                     </div>
                     <div class="horaires">
                         <h1>HORAIRES</h1>
-                        <P>Du mardi au samedi</P>
-                        <P>Déjeuner de 12h00 à 14h00</P>
-                        <P>Dîner de 18h30 à 22h00</P>
+                        <P class="white_text">Du mardi au samedi</P>
+                        <P class="white_text">Déjeuner de 12h00 à 14h00</P>
+                        <P class="white_text">Dîner de 18h30 à 22h00</P>
                     </div>
                     <div class="nous_contacter">
                         <h1>NOUS CONTACTER</h1>
-                        <p>04.13.13.13.13</p>
-                        <p>OXi'anShaanzi@restaurant.com</p>
+                        <p class="white_text">04 13 13 13 13</p>
+                        <p class="white_text">OXi'anShaanzi@restaurant.com</p>
                     </div>
                 </div>
-    <!------x------Text Middle Page-----x------>
+                <!------x------Text Middle Page-----x------>
             </div>
         </div>
     </section>
@@ -73,11 +77,11 @@
 
     <footer class="footer flex-row">
         <div class="adresse">
-            <p> Avenue du Prado <br /> 13008 Marseille</p>
+            <p>19 Avenue du Prado <br /> 13008 Marseille</p>
         </div>
         <div class="contacts flex-column">
             <div>
-                <p>Nous Contacter: 06 13 13 13 13</p>
+                <p>Nous Contacter 06 13 13 13 13</p>
             </div>
             <div>
                 <p>ÔXi’anShaanzi@restautant.com</p>
